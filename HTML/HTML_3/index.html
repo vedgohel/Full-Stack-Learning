@@ -1,0 +1,319 @@
+<!---
+
+1. TABLE IN HTML 
+  ~ Table are used to represent data in a structured format. / real life table data.
+  row = horizontal line
+  column = vertical line
+  ~ TR = Table Row
+  ~ TD = Table Data
+  ~ TH = Table Header
+  ~ CAPTION = Table Caption
+  ~ COLSPAN = Column Span
+  ~ ROWSPAN = Row Span
+  ~ BORDER = Border
+     Example :-
+       <table border="black">
+        <caption>food menu</caption>
+          <tr>
+             <th>Item</th>
+             <th>Price</th>
+          </tr>
+          <tr>
+            <td>Frooti</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Mango</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>10</td>
+          </tr>
+    </table>
+
+1.2 new tags :-
+    ~ THEAD = Table Head
+    ~ TBODY = Table Body
+    ~ TFOOT = Table Foot
+ Example :-
+       <table border="black">
+        <caption>food menu</caption>
+        <thead>
+          <tr>
+             <th>Item</th>
+             <th>Price</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Frooti</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Mango</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>10</td>
+          </tr>
+          </tbody>
+    </table>
+
+1.3 ROWSPAN AND COLSPAN IN TABLE HTML:-
+    ~ used to create cell which span multiple rows or columns.
+    span = extend across / expand area.
+   
+    Example :-
+     <table border="black">
+        <caption>fodd menu</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Item</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>frooti</td>
+                <td>20</td>
+                <td>7</td>
+            </tr>
+             <tr>
+                <td>Samosa</td>
+                <td>22</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    Practice: 7 Re-create the following table using HTML. 
+    Ans :- 
+    <table border="black">
+        <caption>A test table with merged cells</caption>
+        <thead>
+            <tr>
+            <th rowspan="2"> </th>
+            <th colspan="2">Average</th>
+            <th rowspan="2"> </th>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <th>Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Females</td>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </tbody>
+    </table>
+    --->
+
+
+    <!--
+    
+    Form in HTML :- 
+    ~ Form is used to collect user input.
+
+    Tags :- 
+
+    <form> = form tag use to create a form. 
+        
+    <input> = input tag use to create input fields.
+              ~ type = specifies the type of input field (text, password, checkbox, radio, etc.).
+              ~ name = specifies the name of the input field, used to identify the data when submitted.
+              ~ value = specifies the initial value of the input field.
+              ~ placeholder = provides a hint to the user about what to enter in the input field.
+              ~ required = indicates that the input field must be filled out before submitting the form.
+              ~ disabled = makes the input field uneditable.
+              ~ readonly = makes the input field read-only, preventing user input but allowing text selection.
+              
+    <label> = label tag use to create a label for an input field.
+             ~ for = associates the label with a specific input field by matching the input's name or id.
+             ~ text = the text displayed for the label.
+
+     <textarea> = textarea tag use to create a multi-line text input field.
+                ~ rows = specifies the number of visible text lines in the textarea.
+                ~ cols = specifies the visible width of the textarea in characters.
+                ~ placeholder = provides a hint to the user about what to enter in the textarea.
+                ~ required = indicates that the textarea must be filled out before submitting the form.
+    
+    <button> = button tag use to create a clickable button.
+                ~ type = specifies the type of button (submit, reset, button).
+                ~ text = the text displayed on the button.
+                ~ onclick = specifies a JavaScript function to be executed when the button is clicked.
+                ~ disabled = makes the button unclickable.
+                ~ form = associates the button with a specific form by matching the form's id. 
+                ~ formaction = specifies the URL where the form data will be sent when the button is clicked. 
+
+    Attributes of form tags :-
+    ~ action = URL where the form data will be sent.
+    ~ method = HTTP method to use when sending form data (GET or POST).
+    
+    Example :-
+
+    <h1>Login Form</h1>
+    <form action="">
+        
+        <label for="username"> Username :</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <br><br>
+        <label for="password"> Password :</label>
+        <input type="text" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+        <button>Login</button>
+        <button type="reset">reset</button>
+        <input type="button" value="Click Me" />
+    </form>
+    
+
+    Practice: create a search option that redirect its search request to google.
+     <form action="https://www.bing.com/search">
+        <input type="text" name="q" placeholder="Search Bing" required>
+        <button>Search</button>
+    </form>
+
+    New tags :-
+
+    <checkbox> : checkbox tag use to create a checkbox input field.
+                ~ name = specifies the name of the checkbox, used to identify the data when submitted.
+                ~ value = specifies the value of the checkbox when checked.
+                ~ checked = indicates that the checkbox is checked by default.
+                ~ disabled = makes the checkbox uncheckable.
+
+
+    Practice 9 : Recreate the following form using HTML.
+            <hr />
+    <h1>Registration form</h1>
+    <form action="/action">
+        <input type="text" name="name" placeholder="Enter your name" required />
+        <input type="text" name="password" placeholder="Enter your password" required />
+        <br><br>
+          <label for="gender-select">Choose a gender:</label>
+          
+             <select name="Gender" id="gender-select">
+                <option value="">--Please choose an option--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+             </select>
+
+                  <br><br>
+              Do you agree to all terms of services?<input type="checkbox" id="scales" name="scales" checked />
+              <label for="scales">Yes , I agree</label>
+                <br><br>
+                <button type="submit">Register</button>
+    </form>
+    
+
+    --->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-LEVEL_3</title>
+</head>
+<body>
+    <h1>All Tag Content in  Form</h1>
+    <form action="">
+        
+        <label for="username"> Username :</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <br><br>
+        <label for="password"> Password :</label>
+        <input type="text" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+         <input type="checkbox" id="scales" name="scales" checked />
+         <label for="scales">18+ age</label>
+         <br><br>
+         <div>
+    <input type="radio" id="huey" name="drone" value="huey" checked />
+    <label for="huey">Huey</label>
+  </div>
+        
+          <div>
+            <input type="radio" id="dewey" name="drone" value="dewey" />
+            <label for="dewey">Dewey</label>
+          </div>
+        
+          <div>
+            <input type="radio" id="louie" name="drone" value="louie" />
+            <label for="louie">Louie</label>
+          </div>
+          <br>
+
+          <label for="pet-select">Choose a State:</label>
+
+        <select name="pets" id="pet-select">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Gujrat</option>
+          <option value="cat">Goa</option>
+          <option value="hamster">Rajsthan</option>
+          <option value="parrot">Aasam</option>
+          <option value="spider">Bangladesh</option>
+          <option value="goldfish">Tamil</option>
+        </select>
+        <br><br>
+
+        <div>
+            <input
+              type="range"
+              id="cowbell"
+              name="cowbell"
+              min="0"
+              max="100"
+              value="90"
+              step="10" />
+            <label for="cowbell">Agree</label>
+          </div>
+        <br><br>
+
+        <label for="story">Feedback:</label>
+        
+        <textarea id="story" name="story" rows="5" cols="33"></textarea>
+        
+        <br><br>
+        <button>Login</button>
+        <button type="reset">reset</button>
+        <input type="button" value="Click Me" />
+    </form>
+   
+    <hr />
+    <h1>Registration form</h1>
+    <form action="/action">
+        <input type="text" name="name" placeholder="Enter your name" required />
+        <input type="text" name="password" placeholder="Enter your password" required />
+        <br><br>
+          <label for="gender-select">Choose a gender:</label>
+          
+             <select name="Gender" id="gender-select">
+                <option value="">--Please choose an option--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+             </select>
+
+                  <br><br>
+              Do you agree to all terms of services?<input type="checkbox" id="scales" name="scales" checked />
+              <label for="scales">Yes , I agree</label>
+                <br><br>
+                <button type="submit">Register</button>
+    </form>
+    
+</body>
+</html>
