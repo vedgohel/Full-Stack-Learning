@@ -1,0 +1,41 @@
+<!-- 
+ 
+Badge :- 
+      ~ A badge is a small count and labeling component. Badges are often used as indicators of new or unread items.
+      ~ Badges can be used with links, buttons, or any other elements.
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge-Boopstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+</head>
+<body>
+      <h3>Notification 
+        <span class="badge bg-primary">20+</span>
+      </h3>
+
+      <br>
+
+      <button class="btn btn-primary">Followers
+        <span class="badge bg-dark">5</span>
+      </button>
+
+      <br>
+      <br>
+
+      <button type="button" class="btn btn-primary position-relative">
+        Inbox
+           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        99+
+           <span class="visually-hidden">unread messages</span>
+         </span>
+        </button>
+</body>
+</html>
