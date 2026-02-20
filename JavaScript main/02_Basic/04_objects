@@ -1,0 +1,82 @@
+// const tinderUser = new Object();
+
+const tinderUser = {}
+// Object literal syntax is a concise way to create objects in JavaScript.
+
+tinderUser.id = "12345";
+tinderUser.name = "John Doe";
+tinderUser.isLoggedIn = false;
+
+
+// console.log(tinderUser); // { id: '12345', name: 'John Doe', isLoggedIn: false }
+
+
+const regularUser = {
+    email:"ved@example.com",
+    fullName:{
+        userfullName:{
+            firstName:"ved",
+            lastName:"kumar"
+        }
+    }
+}
+
+// console.log(regularUser.fullName?.userfullName); // { firstName: 'ved', lastName: 'kumar' }
+
+const obj1 = {
+    1: "one",
+    2:"two",
+}
+
+const obj2 = {
+    3: "three",
+    4:"four",
+}
+
+// const obj3 = {obj1, obj2}; // object destructuring
+
+// assigning properties from one object to another using Object.assign
+// const obj3 = Object.assign({}, obj1, obj2); // Merging two objects into one
+
+const obj3 = {...obj1, ...obj2}; // Merging two objects into one using spread operator
+
+// console.log(obj3); // { '1': 'one', '2': 'two', '3': 'three', '4': 'four' }
+
+// const user = {
+//     {
+//     id: "12345",
+//     name: "John Doe",
+//     email: "john@example.com"
+//     } ,
+//     {
+//         id: "67890",
+//         name: "Jane Smith",
+//         email: "jane@example.com"
+//     }
+// };
+
+// // user[0].email
+// console.log(tinderUser); // { id: '12345', name: 'John Doe', isLoggedIn: false }
+
+// console.log(Object.keys(tinderUser)); // ['id', 'name', 'isLoggedIn']
+// console.log(Object.values(tinderUser)); // ['12345', 'John Doe', false]
+// console.log(Object.entries(tinderUser)); // [['id', '12345'], ['name', 'John Doe'], ['isLoggedIn', false]]
+
+// console.log(Object.hasOwn(tinderUser, "isLoggedIn")); // true
+
+const course ={
+    courseName: "JavaScript Basics",
+    price : 100,
+    courseInstructor: "Ved "
+
+}
+
+// course.courseInstructor
+
+const {courseInstructor } = course; // Destructuring assignment to extract properties from the course object
+
+console.log(courseInstructor); // "Ved "
+
+{
+
+}
