@@ -78,7 +78,6 @@ const {courseInstructor } = course; // Destructuring assignment to extract prope
 console.log(courseInstructor); // "Ved "
 
 {
-
 }
 
 // javascript main part 2 
