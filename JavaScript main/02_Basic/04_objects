@@ -1,5 +1,4 @@
 // const tinderUser = new Object();
-
 const tinderUser = {}
 // Object literal syntax is a concise way to create objects in JavaScript.
 
