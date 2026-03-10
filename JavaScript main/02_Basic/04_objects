@@ -19,6 +19,7 @@ const regularUser = {
     }
 }
 
+
 // console.log(regularUser.fullName?.userfullName); // { firstName: 'ved', lastName: 'kumar' }
 
 const obj1 = {
