@@ -1,7 +1,7 @@
 // const tinderUser = new Object();
-
 const tinderUser = {}
 // Object literal syntax is a concise way to create objects in JavaScript.
+
 
 tinderUser.id = "12345";
 tinderUser.name = "John Doe";
@@ -9,8 +9,6 @@ tinderUser.isLoggedIn = false;
 
 
 // console.log(tinderUser); // { id: '12345', name: 'John Doe', isLoggedIn: false }
-
-
 const regularUser = {
     email:"ved@example.com",
     fullName:{
@@ -20,6 +18,7 @@ const regularUser = {
         }
     }
 }
+
 
 // console.log(regularUser.fullName?.userfullName); // { firstName: 'ved', lastName: 'kumar' }
 
@@ -79,5 +78,7 @@ console.log(courseInstructor); // "Ved "
 
 {
 }
+
+
 
 // javascript main part 2 
