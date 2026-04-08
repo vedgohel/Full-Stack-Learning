@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Press the Key and Watch Magic</title>
+  
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+  background-color: #222;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+.key-box {
+  margin-top: 20px;
+  font-size: 5rem;
+  padding: 40px 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #fff;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+  animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+</style>
+<body>
+  <div class="container">
+    <h1>Press Any Key...</h1>
+    <div class="key-box" id="keyBox">🎩</div>
+  </div>
+
+  <script src="chaiaurcode.js"></script>
+</body>
+</html>
