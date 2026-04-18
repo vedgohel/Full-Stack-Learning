@@ -1,0 +1,109 @@
+<!-- Ans :1  -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Events Demo</title>
+</head>
+<body>
+
+<h3 id="text">Hover or type something</h3>
+
+<script>
+// Mouseout event
+let text = document.getElementById("text");
+text.addEventListener("mouseout", function() {
+  console.log("Mouse left the text");
+});
+
+// Keypress event
+document.addEventListener("keypress", function(event) {
+  console.log("Key pressed:", event.key);
+});
+
+// Scroll event
+window.addEventListener("scroll", function() {
+  console.log("Page is scrolling");
+});
+
+// Load event
+window.addEventListener("load", function() {
+  console.log("Page fully loaded");
+});
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- Ans 2: -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+// Create button
+let btn = document.createElement("button");
+btn.innerText = "Click Me";
+
+// Add to body
+document.body.appendChild(btn);
+
+// Add event
+btn.addEventListener("click", function() {
+  btn.style.backgroundColor = "green";
+  btn.style.color = "white";
+});
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Ans 3 : -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="heading"></h2>
+
+<input type="text" id="nameInput" placeholder="Enter your name">
+
+<script>
+let input = document.getElementById("nameInput");
+let heading = document.getElementById("heading");
+
+input.addEventListener("input", function() {
+  // Allow only letters and space
+  let filteredValue = input.value.replace(/[^a-zA-Z ]/g, "");
+  
+  // Update input box (remove invalid chars)
+  input.value = filteredValue;
+  
+  // Show in heading
+  heading.innerText = filteredValue;
+});
+</script>
+
+</body>
+</html> -->
