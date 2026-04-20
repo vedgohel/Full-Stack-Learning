@@ -52,7 +52,9 @@
 // man mkdir - give info about mkdir command
 
 
+
 // Deleting the files  & folders
+
 
 // rm => remove files
 // rmdir => removes empty folders
