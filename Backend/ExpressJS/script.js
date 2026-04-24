@@ -42,16 +42,26 @@ app.listen(port ,()=>{
     
 });
 
+
+
+
 // app.use((req,res) =>{
 //      console.log("new incoming request !");
 //      res.send("This is a basic server page");
 // });
+
+
+
+
 
 // sending request 
 // => response = object , string , array 
 
 // routing :
 // it is process of selecting a path for traffic in a network or between or across multiple networks.
+
+
+
 
 
 
