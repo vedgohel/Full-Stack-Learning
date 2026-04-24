@@ -1,0 +1,99 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #fafafa;
+        }
+
+        nav {
+            background: white;
+            padding: 12px 40px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav h2 {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .feed {
+            width: 420px;
+        }
+
+        .post {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .post-header img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .post img.post-img {
+            width: 100%;
+        }
+
+        .post-content {
+            padding: 10px;
+        }
+
+        .like-btn {
+            font-size: 22px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .liked {
+            color: red;
+        }
+
+        .comment-box {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .comment-box input {
+            flex: 1;
+            padding: 6px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .comment-box button {
+            margin-left: 5px;
+            padding: 6px 10px;
+            border: none;
+            background: #3897f0;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comments p {
+            font-size: 13px;
+            margin-top: 5px;
+        }

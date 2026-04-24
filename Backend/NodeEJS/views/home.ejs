@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("includes/head") %>
+
+<body>
+
+<%- include("includes/navbar") %>
+
+<div class="container">
+    <div class="feed">
+
+        <% posts.forEach((post, index) => { %>
+
+            <div class="post">
+
+                <div class="post-header">
+                    <img src="<%= post.userImg %>">
+                    <strong><%= post.username %></strong>
+                </div>
+
+                <img class="post-img" src="<%= post.postImg %>">
+
+                <div class="post-content">
+
+                    <!-- Like -->
+                    <span class="like-btn" onclick="toggleLike(this)">🤍</span>
+
+                    <p><b><%= post.username %></b> <%= post.caption %></p>
+
+                    <!-- Comments -->
+                    <div class="comments" id="comments-<%= index %>"></div>
+
+                    <!-- Input -->
+                    <div class="comment-box">
+                        <input type="text" id="input-<%= index %>" placeholder="Add comment...">
+                        <button onclick="addComment(<%= index %>)">Post</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        <% }) %>
+
+    </div>
+</div>
+
+<script>
+function toggleLike(el) {
+    el.classList.toggle("liked");
+    el.innerText = el.classList.contains("liked") ? "❤️" : "🤍";
+}
+
+function addComment(index) {
+    let input = document.getElementById("input-" + index);
+    let box = document.getElementById("comments-" + index);
+
+    if (input.value.trim()) {
+        let p = document.createElement("p");
+        p.innerText = input.value;
+        box.appendChild(p);
+        input.value = "";
+    }
+}
+</script>
+
+</body>
+<%- include("includes/footer") %>
+</html>
