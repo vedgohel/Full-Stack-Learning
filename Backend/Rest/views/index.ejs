@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora Posts</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%237c3aed'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='white' font-family='sans-serif'>Q</text></svg>">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>✦ Quora Posts</h1>
+
+    <a class="create-link" href="/posts/new">
+        <span>＋ Create Post</span>
+    </a>
+
+    <% if (posts.length === 0) { %>
+        <div class="empty-state">
+            <p>No posts yet. <a href="/posts/new">Be the first to post!</a></p>
+        </div>
+    <% } %>
+
+    <% for (let post of posts) { %>
+        <div class="post">
+            <h3>
+                <a href="/posts/<%= post.id %>" style="text-decoration:none; color:inherit;">
+                    @ <%= post.username %>
+                </a>
+            </h3>
+            <p><%= post.content %></p>
+
+            <div class="actions">
+
+                <!-- Edit -->
+                <a class="btn edit-btn" href="/posts/<%= post.id %>/edit">
+                    <span class="btn-icon">✏️</span> Edit
+                </a>
+
+                <!-- Delete -->
+                <form action="/posts/<%= post.id %>?_method=DELETE" method="POST">
+                    <button class="btn delete-btn">
+                        <span class="btn-icon">🗑️</span> Delete
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    <% } %>
+
+</div>
+
+</body>
+</html>

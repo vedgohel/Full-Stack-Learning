@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= post.username %>'s Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="form-card">
+
+    <a class="back-link" href="/posts">← Back to Posts</a>
+
+    <h1>Post</h1>
+
+    <div class="show-username">@ <%= post.username %></div>
+    <div class="show-content"><%= post.content %></div>
+
+    <div class="actions" style="margin-top: 30px;">
+
+        <!-- Edit -->
+        <a class="btn edit-btn" href="/posts/<%= post.id %>/edit">
+            <span class="btn-icon">✏️</span> Edit
+        </a>
+
+        <!-- Delete -->
+        <form action="/posts/<%= post.id %>?_method=DELETE" method="POST">
+            <button class="btn delete-btn">
+                <span class="btn-icon">🗑️</span> Delete
+            </button>
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
