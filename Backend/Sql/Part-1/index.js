@@ -7,6 +7,8 @@
 // => Easier to insert , update or delete data .
 
 
+
+
 // SQL VS NOSQL
 
 //                              SQL                                           NOSQL
@@ -19,6 +21,8 @@
 
 
 
+
+
 // SQL => Structured query language
 // => SQL is a programming language used to interact with relational databases.
 
@@ -26,6 +30,8 @@
 // css -> style
 // javascript -> functionality
 // sql -> relational databases
+
+
 
 
 // tables in sql
