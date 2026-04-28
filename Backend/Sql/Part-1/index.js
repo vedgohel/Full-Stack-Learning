@@ -177,6 +177,13 @@
 // );
 
 
+
+
+
+
+
+
 // course table → main table
 // student.course_id → foreign key
 // Ye course.course_id ko refer karta hai
+
