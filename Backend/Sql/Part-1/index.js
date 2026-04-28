@@ -79,12 +79,15 @@
 
 // Table queries
 
+
 // 1. Create 
 // 2. Insert
 // 3. Update
 // 4. Alter
 // 5. Truncate
 // 6. Delete
+
+
 
 
 
@@ -99,11 +102,14 @@
 
 
 
+
+
 // What is a constraint in SQL?
 
 // A constraint is a rule applied on a table’s column to control what data can be inserted.
 
 // Constraint = data ke upar rule (galat data insert na ho)
+
 
 // PRIMARY KEY → unique + compulsory
 // NOT NULL → empty allowed nahi
@@ -113,12 +119,16 @@
 
 
 
+
+
 // example :
 // CREATE TABLE student (
 //     roll_no INT PRIMARY KEY,
 //     name VARCHAR(50) NOT NULL,
 //     age INT CHECK (age >= 18)
 // );
+
+
 
 
 
@@ -139,6 +149,8 @@
 //     name VARCHAR(50),
 //     age INT
 // );
+
+
 
 
 
