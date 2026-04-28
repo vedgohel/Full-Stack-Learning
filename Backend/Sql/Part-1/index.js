@@ -1,10 +1,14 @@
 // what is database?
 // => it is a collection of data in a format that can be easily accessed.
 
+
+
 // why database : 
 // => can store large data
 // => features  like security , scalability etc.
 // => Easier to insert , update or delete data .
+
+
 
 
 
@@ -23,6 +27,7 @@
 
 
 
+
 // SQL => Structured query language
 // => SQL is a programming language used to interact with relational databases.
 
@@ -34,22 +39,30 @@
 
 
 
+
 // tables in sql
 // columns -> design ( schema ) -> { id , pass }
 // rows -> tuple 
 
 
+
 // database
+
 
 
 // 1.creating new database
 //  => CREATE DATABASE college;
 
+
 // 2. use database
 // => use database
 
+
 // 3. delete database
 // => drop database;
+
+
+
 
 
 
